@@ -22,6 +22,7 @@
   var email=string(data.contact_email);
   if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
    document.querySelectorAll("[data-site-email]").forEach(function(node){node.textContent=email;node.setAttribute("href","mailto:"+email);});
+   document.querySelectorAll("[data-site-email-text]").forEach(function(node){node.textContent=email;});
   }
   var url=assetUrl(data.hero_image);
   var img=document.getElementById("hero-manageable-image");
