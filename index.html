@@ -7,9 +7,65 @@
 .logo small{display:block;color:var(--gold);font-size:10px;line-height:1.4;font-weight:750;letter-spacing:.35px;margin-top:5px;text-transform:uppercase}
 .footer strong{display:block;max-width:680px;line-height:1.35}
 @media(max-width:600px){.logo{font-size:18px}.logo small{font-size:9px;letter-spacing:0}}
+
+/* Navy and white visual theme, updated October 2026 */
+:root{--dark:#071c31;--gold:#bed7ed;--ink:#f5f9fd;--muted:#c6d5e4;--light:#0e2843}
+body{background:#071c31;color:#f5f9fd}
+.header{background:#081d31;border-color:#24445e}
+.logo strong,.logo small,nav a{color:#f5f9fd}
+.logo small{opacity:.83}
+nav a:hover,.text-link:hover{color:#c4e3fc}
+.header .nav-cta,.btn{background:#f3f8fe;color:#0c2944}
+.header .nav-cta:hover,.btn:hover{background:#cbdfef;color:#092239}
+.hero{background:linear-gradient(125deg,#071a2e 0%,#102b46 70%,#173852 100%)}
+.hero h1,.hero h1 em{color:#ffffff}
+.hero .lead{color:#cfdeec}
+.hero .kicker,.kicker{color:#c2dcf1}
+.hero-foot{color:#d0deea}
+.hero-foot:before{color:#c2dcf1}
+.hero-photo{margin:0;position:relative;border:1px solid #395771;box-shadow:16px 16px 0 #173750;overflow:hidden;min-height:540px;background:#1c3c59}
+.hero-photo img{width:100%;height:540px;object-fit:cover;object-position:54% 50%;display:block;filter:brightness(.83) saturate(.86)}
+.hero-photo:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#081b2ec9);pointer-events:none}
+.hero-photo figcaption{position:absolute;z-index:1;left:24px;bottom:22px;right:20px;font-size:12px;color:#f6faff;letter-spacing:.1px}
+.hero-photo figcaption a{color:#f6faff;text-decoration:underline}
+.strip{background:#0e2c49;border-top:1px solid #2b4a64;border-bottom:1px solid #2b4a64;color:#e1edfa}
+.section,.section.light{background:#0c233a}
+.section h2,.section h3{color:#fff}
+.section-head p,.service p,.step p,.formats,.formats strong{color:#c6d6e5}
+.services{background:#36526a;border-color:#36526a}
+.service,.service:first-child{background:#13334f}
+.service:first-child{background:#1a405c}
+.service .number,.step b,.service a{color:#c3dbf1}
+.service a:hover{color:#ffffff}
+.dark-section{background:#06172a}
+.dark-section h2 em{color:#d0e7fc}
+.dark-section p{color:#cad9e6}
+.problems li{border-color:#3b536a;color:#f6f9fc}
+.problems b{color:#b9d5ec}
+.step{border-color:#88aecb}
+.scan{background:#112e4a}
+.scan-intro h2 em{color:#d7e9fa}
+.scan-intro p,.scan-intro li,.scan-intro .small{color:#c8d9e8!important}
+.form-card{background:#1c405c;box-shadow:0 20px 50px #03122366}
+.form-card h3{color:#ffffff}
+.form-card>p{color:#d5e3ef}
+.form-card label{color:#f3f8fc}
+.form-card input,.form-card select,.form-card textarea{background:#f0f5fa;color:#142e42;border-color:#82a0b5}
+.form-card .disclaimer{color:#b8ccdc}
+.form-card .status{color:#d8f0d9}
+.faq-grid details{border-color:#365570}
+.faq-grid summary{color:#f5f9fd}
+.faq-grid details p{color:#cbd9e6}
+.footer{background:#051524;color:#c3d5e5}
+.footer strong{color:#fff}
+@media(max-width:900px){.hero-photo,.hero-photo img{min-height:380px;height:380px}}
+@media(max-width:600px){.hero-photo,.hero-photo img{min-height:300px;height:300px;box-shadow:none}.hero-photo figcaption{font-size:10px;bottom:14px;left:14px}.hero h1{font-size:clamp(38px,10vw,57px)}}
 </style></head><body>
 <header class="header"><div class="container header-in"><a class="logo" href="#home" aria-label="Всероссийский центр определения сметной стоимости строительства"><strong>Всероссийский центр</strong><small>определения сметной стоимости строительства</small></a><nav aria-label="Разделы"><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#process">Этапы</a><a class="nav-cta" href="#scan">Проверить смету</a></nav></div></header>
-<main><section class="hero" id="home"><div class="container hero-grid"><div><div class="kicker">Независимая строительная аналитика</div><h1>Смета должна <em>работать</em> на результат</h1><p class="lead">Помогаем подрядчикам, заказчикам и проектным организациям разобраться в стоимости строительства, обосновать расчёты и защитить экономику проекта.</p><div class="actions"><a class="btn" href="#scan">Бесплатная оценка сметы ↗</a><a class="text-link" href="#services">Наши услуги →</a></div><div class="hero-foot">Работаем с проектами по всей России</div></div><div class="blueprint" aria-hidden="true"><div><span>АНАЛИТИКА СТОИМОСТИ</span><span>01 / 04</span></div><svg viewBox="0 0 500 440" fill="none"><defs><pattern id="g" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" stroke="#cbd5d6" stroke-width=".7"/></pattern></defs><rect width="500" height="440" fill="url(#g)"/><g stroke="#8098a1" stroke-width="1.8"><path d="M45 390H455M85 390V150h100v240M185 390V95h135v295M320 390V195h110v195M76 150h118M174 95h157M311 195h129"/><path d="M205 125h26v34h-26zm53 0h26v34h-26zm-53 60h26v34h-26zm53 0h26v34h-26zm-53 60h26v34h-26zm53 0h26v34h-26zm-53 60h26v34h-26zm53 0h26v34h-26zM100 180h25v30h-25zm40 0h25v30h-25zm-40 55h25v30h-25zm40 0h25v30h-25zm-40 55h25v30h-25zm40 0h25v30h-25zM340 225h28v32h-28zm43 0h28v32h-28zm-43 55h28v32h-28zm43 0h28v32h-28zm-43 55h28v32h-28zm43 0h28v32h-28z"/></g><path d="M38 390h424M185 95V68h135" stroke="#b28951" stroke-width="3"/><circle cx="185" cy="95" r="5" fill="#b28951"/></svg><div><span>СИСТЕМНЫЙ ПОДХОД</span><span>РАСЧЁТ / КОНТРОЛЬ</span></div></div></div></section>
+<main><section class="hero" id="home"><div class="container hero-grid"><div><div class="kicker">Независимая строительная аналитика</div><h1>Смета должна <em>работать</em> на результат</h1><p class="lead">Помогаем подрядчикам, заказчикам и проектным организациям разобраться в стоимости строительства, обосновать расчёты и защитить экономику проекта.</p><div class="actions"><a class="btn" href="#scan">Бесплатная оценка сметы ↗</a><a class="text-link" href="#services">Наши услуги →</a></div><div class="hero-foot">Работаем с проектами по всей России</div></div><figure class="hero-photo">
+<img src="https://images.unsplash.com/photo-1757436382135-5cb8e5cbcda5?auto=format&amp;fit=crop&amp;w=1400&amp;q=82" alt="Современное высотное строительство: стеклянные здания и башенные краны" width="1000" height="750" fetchpriority="high" decoding="async">
+<figcaption>Современное строительство · Фото: <a href="https://unsplash.com/photos/modern-skyscrapers-under-construction-with-cranes-y-puB7TgIe0" target="_blank" rel="noopener noreferrer">Павел Авакумов / Unsplash</a></figcaption>
+</figure></div></section>
 <div class="strip"><div class="container strip-in"><span>СТРОИТЕЛЬНЫЕ КОМПАНИИ</span><span>ГОСКОНТРАКТЫ</span><span>ПРОЕКТНЫЕ ОРГАНИЗАЦИИ</span><span>ЧАСТНЫЕ ЗАКАЗЧИКИ</span></div></div>
 <section class="section light" id="services"><div class="container"><div class="section-head"><div><div class="kicker">01 / Компетенции</div><h2>Услуги для сложных<br>строительных задач</h2></div><p>От локальных сметных расчётов до комплексного сопровождения: разбираемся в цифрах и документах, чтобы у клиента была аргументированная позиция.</p></div><div class="services">
 <article class="service"><span class="number">01</span><h3>Составление и проверка смет</h3><p>Локальные сметные расчёты, анализ расценок, объёмов и ресурсов по исходным документам.</p><a href="#scan">Обсудить задачу ↗</a></article>
