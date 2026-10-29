@@ -156,8 +156,9 @@ nav a:hover,.text-link:hover{color:#c4e3fc}
 .materials-cards a{color:#ebf7ff;border-bottom:1px solid #8bb9d9;align-self:flex-start;font-size:14px;font-weight:700}
 .materials-all{display:inline-block;margin-top:24px;color:#fff;font-weight:700;border-bottom:1px solid #9cc1df;font-size:14px}
 @media(max-width:700px){.materials-cards{grid-template-columns:1fr}.materials-cards article{padding:26px}}
+.news-teaser{background:#0c2944;color:#f7fbff;border-top:1px solid #355670}.news-teaser h2,.news-teaser h2 em{color:#fff}.news-teaser .section-head p{color:#c6d9e8}.news-teaser-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.news-teaser-items article{padding:27px;border:1px solid #476880;background:#163a58}.news-teaser-items h3{margin:13px 0;color:#fff}.news-teaser-items p{font-size:14px;color:#d0e0ed}.news-teaser-items .news-date{font-size:11px;color:#aacee8}.news-teaser-items a{display:inline-block;font-size:14px;font-weight:700;border-bottom:1px solid #accfe5;color:#fff}@media(max-width:650px){.news-teaser-items{grid-template-columns:1fr}}
 </style></head><body>
-<header class="header"><div class="container header-in"><a class="logo" href="#home" aria-label="Всероссийский центр определения сметной стоимости строительства"><strong>Всероссийский центр</strong><small>определения сметной стоимости строительства</small></a><nav aria-label="Разделы"><a href="#about">О центре</a><a href="services.html">Услуги</a><a href="materials.html">Материалы</a><a href="#contacts">Контакты</a><a class="nav-cta" href="#scan">Смета-скан</a></nav></div></header>
+<header class="header"><div class="container header-in"><a class="logo" href="#home" aria-label="Всероссийский центр определения сметной стоимости строительства"><strong>Всероссийский центр</strong><small>определения сметной стоимости строительства</small></a><nav aria-label="Разделы"><a href="#about">О центре</a><a href="services.html">Услуги</a><a href="news.html">Статьи</a><a href="materials.html">Материалы</a><a href="#contacts">Контакты</a><a class="nav-cta" href="#scan">Смета-скан</a></nav></div></header>
 <main><section class="hero hero-approved" id="home" aria-label="Всероссийский центр определения сметной стоимости строительства">
 <h1 class="visually-hidden">Всероссийский центр определения сметной стоимости строительства — сметные расчёты и экспертное сопровождение</h1>
 <div class="hero-mobile-intro">
@@ -165,14 +166,14 @@ nav a:hover,.text-link:hover{color:#c4e3fc}
 <h2>Определение сметной стоимости строительства</h2>
 <p>Сметные расчёты, ценовая аналитика, экспертиза и сопровождение проектов по всей России.</p>
 </div>
-<figure class="approved-visual"><img src="assets/hero-gesn-final.webp" width="1672" height="941" alt="ГЭСН без года на нормативном сборнике, таблица ГЭСН на ноутбуке, архитектурные чертежи, калькулятор и строящийся объект" fetchpriority="high" decoding="async"></figure>
+<figure class="approved-visual"><img id="hero-manageable-image" src="assets/hero-gesn-final.webp" width="1672" height="941" alt="ГЭСН без года на нормативном сборнике, таблица ГЭСН на ноутбуке, архитектурные чертежи, калькулятор и строящийся объект" fetchpriority="high" decoding="async"></figure>
 <div class="container approved-actions"><a class="btn" href="#scan">Бесплатная оценка сметы ↗</a><a class="text-link" href="#services">Посмотреть услуги →</a></div>
 </section>
 <div class="strip"><div class="container strip-in"><span>СТРОИТЕЛЬНЫЕ КОМПАНИИ</span><span>ГОСКОНТРАКТЫ</span><span>ПРОЕКТНЫЕ ОРГАНИЗАЦИИ</span><span>ЧАСТНЫЕ ЗАКАЗЧИКИ</span></div></div>
 <section class="section about-section" id="about" aria-labelledby="about-heading">
 <div class="container">
 <div class="about-top"><div><div class="kicker">О центре · Работа по всей России</div><h2 id="about-heading">Сметная стоимость —<br><em>в цифрах и документах</em></h2></div>
-<div class="about-lead"><p>Помогаем разобраться в расчётах стоимости строительства, проверить состав и объёмы работ, сопоставить смету с исполнительной документацией и подготовить обоснованную позицию для переговоров.</p><p>Объём анализа определяем по исходным данным и конкретной задаче заказчика.</p></div></div>
+<div class="about-lead"><p data-site-text="about_lead">Помогаем разобраться в расчётах стоимости строительства, проверить состав и объёмы работ, сопоставить смету с исполнительной документацией и подготовить обоснованную позицию для переговоров.</p><p data-site-text="about_details">Объём анализа определяем по исходным данным и конкретной задаче заказчика.</p></div></div>
 <div class="about-tiles">
 <article><span class="about-num">01 / Нормативы</span><h3>Сметные расчёты</h3><p>Анализ норм ГЭСН, ресурсов, коэффициентов и исходных объёмов. Для определения стоимости учитываем применимую методику и исходные условия проекта.</p></article>
 <article><span class="about-num">02 / Сопоставление</span><h3>Контроль выполнения</h3><p>Сверка смет и актов КС-2, анализ справок КС-3, накопительных объёмов и незакрытого остатка работ.</p></article>
@@ -218,20 +219,22 @@ nav a:hover,.text-link:hover{color:#c4e3fc}
 </div>
 <a class="materials-all" href="materials.html">Все справочные материалы ↗</a>
 </div></section>
+<section class="section news-teaser" id="news">
+<div class="container"><div class="section-head"><div><div class="kicker">Статьи и новости</div><h2>Разбираем сметные<br><em>вопросы на практике</em></h2></div><p>Пояснения о строительной документации, сметных расчётах и стоимости работ. Новые публикации можно добавлять через редактор сайта.</p></div><div id="news-on-home" class="news-teaser-items" aria-live="polite"><p>Подборка материалов скоро появится.</p></div><div style="margin-top:27px"><a class="btn" href="news.html">Все статьи и новости ↗</a></div></div></section>
 <section class="section contact-section" id="contacts" aria-labelledby="contacts-heading">
 <div class="container contact-layout">
-<div><div class="kicker">06 / Контакты</div><h2 id="contacts-heading">Обсудим вашу <em>сметную задачу</em></h2><p>Опишите, что нужно проверить или рассчитать, какие документы имеются и какой результат ожидается. Начнём с предварительной оценки задачи.</p><p class="contact-secondary">Работаем с обращениями по объектам в разных регионах России. Состав работ, сроки и стоимость согласовываются индивидуально.</p></div>
+<div><div class="kicker">06 / Контакты</div><h2 id="contacts-heading">Обсудим вашу <em>сметную задачу</em></h2><p data-site-text="contacts_intro">Опишите, что нужно проверить или рассчитать, какие документы имеются и какой результат ожидается. Начнём с предварительной оценки задачи.</p><p class="contact-secondary" data-site-text="contacts_scope">Работаем с обращениями по объектам в разных регионах России. Состав работ, сроки и стоимость согласовываются индивидуально.</p></div>
 <div class="contact-panel">
-<div class="contact-label">ВРЕМЕННЫЙ КОНТАКТНЫЙ EMAIL</div>
-<a class="contact-email" href="mailto:ngs-p@mail.ru">ngs-p@mail.ru</a>
-<p>Адрес для вопросов и обращения по услугам. Его можно скопировать и использовать в своей почте.</p>
+<div class="contact-label" data-site-text="contact_email_label">ВРЕМЕННЫЙ КОНТАКТНЫЙ EMAIL</div>
+<a class="contact-email" data-site-email="1" href="mailto:ngs-p@mail.ru">ngs-p@mail.ru</a>
+<p data-site-text="email_note">Адрес для вопросов и обращения по услугам. Его можно скопировать и использовать в своей почте.</p>
 <a href="#scan" class="btn">Подготовить обращение ↗</a>
 <div class="contact-rule"></div>
-<p class="contact-legal">Оператор для юридических документов: ИП Вертинская Анна Ивановна. Реквизиты и адрес официальной корреспонденции будут размещены после подтверждения. Не пересылайте через открытые каналы конфиденциальные сметы и персональные данные третьих лиц.</p>
+<p class="contact-legal">Оператор для юридических документов: <span data-site-text="operator_name">ИП Вертинская Анна Ивановна</span>. Реквизиты и адрес официальной корреспонденции будут размещены после подтверждения. Не пересылайте через открытые каналы конфиденциальные сметы и персональные данные третьих лиц.</p>
 </div>
 </div></section>
 </main>
-<footer class="footer"><div class="container footer-in"><div><strong>Всероссийский центр определения сметной стоимости строительства</strong><p>Сметные расчёты · строительная аналитика · экспертное сопровождение</p><p class="footer-note">Независимые коммерческие услуги · Работа по всей России</p></div><div class="footer-links"><a href="#about">О центре</a><a href="services.html">Услуги</a><a href="materials.html">Материалы</a><a href="#contacts">Контакты</a><a href="#scan">Смета-скан</a></div></div></footer>
+<footer class="footer"><div class="container footer-in"><div><strong>Всероссийский центр определения сметной стоимости строительства</strong><p>Сметные расчёты · строительная аналитика · экспертное сопровождение</p><p class="footer-note">Независимые коммерческие услуги · Работа по всей России</p></div><div class="footer-links"><a href="#about">О центре</a><a href="services.html">Услуги</a><a href="materials.html">Материалы</a><a href="news.html">Статьи и новости</a><a href="#contacts">Контакты</a><a href="#scan">Смета-скан</a></div></div></footer>
 
 <script>
 (function(){
@@ -271,6 +274,7 @@ copy.addEventListener("click",async function(){
 })();
 </script>
 <script src="./config/scan-form.js" defer></script>
+<script src="./assets/cms-content.js" defer></script>
 <script defer>
 (function(){
 "use strict";

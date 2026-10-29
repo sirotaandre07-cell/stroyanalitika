@@ -1,0 +1,86 @@
+# Pages CMS — управление содержимым сайта через GitHub
+# Вход через https://app.pagescms.org/ с GitHub. Пароли в этом репозитории не хранятся.
+media:
+  input: assets
+  output: /stroyanalitika/assets
+  categories: [image]
+  extensions: [png, jpg, jpeg, webp, svg]
+content:
+  - name: site_settings
+    label: Тексты, контакты и фотография
+    type: file
+    path: content/site.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: about_lead
+        label: О центре — главный абзац
+        type: text
+        required: true
+      - name: about_details
+        label: О центре — уточнение
+        type: text
+      - name: contacts_intro
+        label: Контакты — вводный текст
+        type: text
+      - name: contacts_scope
+        label: Контакты — регионы и условия
+        type: text
+      - name: contact_email_label
+        label: Подпись над почтой
+        type: string
+      - name: contact_email
+        label: Контактный email на сайте
+        description: Это меняет адрес на сайте, но НЕ меняет адрес получателя в Яндекс Формах и черновиках правовых документов.
+        type: string
+        required: true
+        pattern: "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+      - name: email_note
+        label: Пояснение под почтой
+        type: text
+      - name: operator_name
+        label: Наименование ИП в блоке контактов
+        description: Перед коммерческим запуском используйте подтверждённые достоверные реквизиты.
+        type: string
+        required: true
+      - name: hero_image
+        label: Картинка на главной (ГЭСН)
+        type: image
+        description: Загружайте только подходящее изображение. Если файл не указан или недоступен, сохранится текущая картинка.
+  - name: articles
+    label: Статьи и новости
+    type: file
+    path: content/news.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - name: id
+        label: Постоянный код статьи (латиница, цифры и дефис)
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: title
+        label: Заголовок
+        type: string
+        required: true
+      - name: date
+        label: Дата
+        type: date
+        required: true
+      - name: summary
+        label: Краткое описание
+        type: text
+        required: true
+      - name: body
+        label: Полный текст (абзацы через пустую строку)
+        type: text
+        required: true
+      - name: published
+        label: Показывать на сайте
+        type: boolean
+      - name: image
+        label: Фото (необязательно)
+        type: image
