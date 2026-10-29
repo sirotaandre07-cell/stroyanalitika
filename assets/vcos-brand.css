@@ -1,0 +1,33 @@
+/* Brand lockup based on approved gold VЦОС logo direction #6.
+   Icon extracted from the approved original; typography is native, crisp and accessible. */
+.brand-lockup{display:inline-flex;align-items:center;gap:11px;flex:0 0 auto;min-width:0;text-decoration:none!important;color:#fff!important;max-width:360px}
+.brand-lockup:hover{text-decoration:none!important}
+.brand-icon{width:70px;height:68px;object-fit:contain;flex:none;display:block;filter:drop-shadow(0 1px 3px #0004)}
+.brand-copy{display:flex;flex-direction:column;justify-content:center;min-width:0}
+.brand-word{display:block;font-family:"Segoe UI",Arial,sans-serif;font-size:34px;font-weight:900;line-height:1;letter-spacing:1.2px;color:#efd184;background:linear-gradient(180deg,#fff5bc 0%,#eec56e 32%,#b68026 84%,#f3cf7c 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.brand-descriptor{display:block;margin-top:5px;font:650 9px/1.36 "Segoe UI",Arial,sans-serif;letter-spacing:.15px;color:#f4f7fb!important;text-transform:uppercase;opacity:.96}
+.header-in>.brand-lockup,.head>.brand-lockup,.header>.brand-lockup{flex-shrink:0}
+.brand-lockup:focus-visible{outline:3px solid #f3d183;outline-offset:4px}
+@media(max-width:1150px){.header-in:has(.brand-lockup){flex-wrap:wrap;gap:10px 20px;padding-top:14px;padding-bottom:14px}.header-in:has(.brand-lockup) nav{justify-content:flex-start;gap:12px 20px}}
+@media(max-width:720px){.brand-icon{width:59px;height:57px}.brand-word{font-size:29px}.brand-descriptor{font-size:8px}.brand-lockup{gap:9px}.header-in:has(.brand-lockup){align-items:flex-start}.header-in:has(.brand-lockup) nav{gap:12px 16px}.head:has(.brand-lockup){align-items:flex-start}}
+/* Expanded "Понимаем задачу" section */
+#approach{scroll-margin-top:110px}
+#approach .problem-intro{display:grid;grid-template-columns:1fr .85fr;align-items:end;gap:65px;margin:16px 0 36px}
+#approach .problem-intro h2{margin:0;font-size:clamp(35px,4vw,55px);color:#fff}
+#approach .problem-intro p{margin:0 0 6px;font-size:16px;line-height:1.75;color:#cbdde9}
+.problem-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.problem-card{min-width:0;background:#102f4b;border:1px solid #456784;padding:30px 30px 28px}
+.problem-card-customer{background:#163950}
+.problem-role{font-size:11px;letter-spacing:1.6px;font-weight:800;text-transform:uppercase;color:#d2b87e}
+.problem-card h3{font:normal clamp(24px,2.6vw,32px)/1.2 Georgia,serif;margin:15px 0 22px;color:#fff}
+.problem-card ol{margin:0 0 23px;padding:0;list-style:none;counter-reset:pb}
+.problem-card li{counter-increment:pb;display:flex;align-items:baseline;gap:13px;color:#dbe8f2;line-height:1.55;font-size:14px;padding:13px 0;border-bottom:1px solid #42617b}
+.problem-card li:first-child{border-top:1px solid #42617b}
+.problem-card li::before{content:counter(pb,decimal-leading-zero);font:700 13px Georgia,serif;color:#dec58b;flex:0 0 27px}
+.problem-link{display:inline-block;border-bottom:1px solid #cae1f0;color:#eaf5fd;font-size:14px;font-weight:700}
+.problem-link:hover{color:#fff}
+.problem-action{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:30px}
+.problem-action p{max-width:720px;font-size:13px;color:#d2dfeb}
+.problem-action .btn{white-space:nowrap}
+@media(max-width:900px){#approach .problem-intro{grid-template-columns:1fr;gap:13px}.problem-two{grid-template-columns:1fr}}
+@media(max-width:600px){.problem-card{padding:24px 20px}.problem-action{flex-direction:column;align-items:stretch}.problem-action .btn{text-align:center}.problem-card h3{font-size:26px}}
