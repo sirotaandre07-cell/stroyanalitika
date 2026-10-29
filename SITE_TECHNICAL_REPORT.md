@@ -4,12 +4,12 @@
 
 ## Основные страницы
 
-- Главная: https://sirotaandre07-cell.github.io/stroyanalitika/
-- Услуги: https://sirotaandre07-cell.github.io/stroyanalitika/services.html
-- Справочные материалы: https://sirotaandre07-cell.github.io/stroyanalitika/materials.html
-- Статьи и новости: https://sirotaandre07-cell.github.io/stroyanalitika/news.html
-- Инструкция к редактору (вход позднее): https://sirotaandre07-cell.github.io/stroyanalitika/admin.html
-- Предпросмотр Яндекс Формы (тестовые данные): https://sirotaandre07-cell.github.io/stroyanalitika/form-preview.html
+- Главная: https://xn--b1ayjs.xn--p1ai/
+- Услуги: https://xn--b1ayjs.xn--p1ai/services.html
+- Справочные материалы: https://xn--b1ayjs.xn--p1ai/materials.html
+- Статьи и новости: https://xn--b1ayjs.xn--p1ai/news.html
+- Инструкция к редактору (вход позднее): https://xn--b1ayjs.xn--p1ai/admin.html
+- Предпросмотр Яндекс Формы (тестовые данные): https://xn--b1ayjs.xn--p1ai/form-preview.html
 
 ## Что работает и подготовлено
 
@@ -41,3 +41,9 @@
 **Вымышленный адрес в `legal-drafts/` является примером оформления, а не адресом оператора.** Он не используется на открытых страницах сайта.
 
 Реализация статических файлов готова к дальнейшей публикации контента. Коммерческий приём заявок нельзя считать запущенным до завершения указанных условий.
+
+## Переход на собственный домен (29.10.2026)
+- Пользователь приобрёл `вцос.рф` у REG.RU. В GitHub Pages успешно сохранён пользовательский домен `xn--b1ayjs.xn--p1ai` (подтверждено скриншотом).
+- В корне репозитория создан GitHub файл `CNAME`, не изменяем его вручную.
+- В исходном коде приведены к новому домену canonical, OpenGraph, Sitemap; путь к главной иллюстрации в Pages CMS теперь `/assets/hero-gesn-final.webp`.
+- Для завершения требуется DNS на стороне регистратора и проверка сертификата HTTPS. До этого сайт по новому адресу может быть недоступен.

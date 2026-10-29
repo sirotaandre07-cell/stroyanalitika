@@ -3,7 +3,7 @@
 Используется **Pages CMS**, внешняя система редактирования статического сайта через GitHub.
 
 ## Вход
-1. Откройте https://app.pagescms.org/ (или локальную инструкцию https://sirotaandre07-cell.github.io/stroyanalitika/admin.html).
+1. Откройте https://app.pagescms.org/ (или локальную инструкцию https://xn--b1ayjs.xn--p1ai/admin.html).
 2. Выберите вход через GitHub владельца `sirotaandre07-cell`.
 3. Если появится экран разрешений GitHub App, **ограничьте доступ одним репозиторием** `sirotaandre07-cell/stroyanalitika`.
 4. Откройте репозиторий и ветку `main` (конфигурация `.pages.yml` уже добавлена).

@@ -2,7 +2,7 @@
 # Вход через https://app.pagescms.org/ с GitHub. Пароли в этом репозитории не хранятся.
 media:
   input: assets
-  output: /stroyanalitika/assets
+  output: /assets
   categories: [image]
   extensions: [png, jpg, jpeg, webp, svg]
 content:

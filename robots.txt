@@ -1,9 +1,8 @@
-# Prepared for the future custom domain.
-# On a GitHub Pages project site, crawlers read robots.txt from the HOST root,
-# not from /stroyanalitika/robots.txt. This file is not active for the current URL.
+# The robot rules are effective when the new domain's DNS has propagated.
 User-agent: *
 Disallow: /form-preview.html
 Disallow: /thanks.html
+Disallow: /admin.html
 Disallow: /legal-drafts/
 Disallow: /config/
-Sitemap: https://sirotaandre07-cell.github.io/stroyanalitika/sitemap.xml
+Sitemap: https://xn--b1ayjs.xn--p1ai/sitemap.xml
