@@ -157,6 +157,39 @@ nav a:hover,.text-link:hover{color:#c4e3fc}
 .materials-all{display:inline-block;margin-top:24px;color:#fff;font-weight:700;border-bottom:1px solid #9cc1df;font-size:14px}
 @media(max-width:700px){.materials-cards{grid-template-columns:1fr}.materials-cards article{padding:26px}}
 .news-teaser{background:#0c2944;color:#f7fbff;border-top:1px solid #355670}.news-teaser h2,.news-teaser h2 em{color:#fff}.news-teaser .section-head p{color:#c6d9e8}.news-teaser-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.news-teaser-items article{padding:27px;border:1px solid #476880;background:#163a58}.news-teaser-items h3{margin:13px 0;color:#fff}.news-teaser-items p{font-size:14px;color:#d0e0ed}.news-teaser-items .news-date{font-size:11px;color:#aacee8}.news-teaser-items a{display:inline-block;font-size:14px;font-weight:700;border-bottom:1px solid #accfe5;color:#fff}@media(max-width:650px){.news-teaser-items{grid-template-columns:1fr}}
+
+/* Distinct roles: customer / contractor. Original content, no external design assets. */
+#audience{scroll-margin-top:105px}
+.audience-section{background:linear-gradient(135deg,#102f4b,#0c2540)!important;border-top:1px solid #3b5a72;color:#f7fbff}
+.audience-section h2,.audience-section h2 em{color:#f9fcff}
+.audience-section .section-head p{color:#d2e0ed}
+.service-audience-link{display:inline-block;margin:10px 0 0 24px;color:#e9f4fc;font-size:14px;border-bottom-color:#b7d7ed}
+.audience-tabs{display:flex;gap:9px;border-bottom:1px solid #678399;padding-bottom:14px;flex-wrap:wrap}
+.audience-tab{border:1px solid #7290aa;padding:14px 25px;min-width:188px;background:#163c59;color:#e2eef7;font-size:15px;font-weight:750;text-align:center}
+.audience-tab:hover{background:#235274}
+.audience-tab[aria-selected="true"]{background:#f5f9fc;color:#0a2a45;border-color:#f5f9fc}
+.audience-tab:focus-visible{outline:3px solid #bad9ef;outline-offset:3px}
+.audience-panel{border:1px solid #597c94;border-top:0;background:#153952;padding:40px}
+.audience-panel[hidden]{display:none!important}
+.audience-cols{display:grid;grid-template-columns:1fr .9fr;gap:50px;align-items:start}
+.audience-eyebrow,.audience-tag{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;font-weight:800;color:#b8d8ed}
+.audience-panel h3{color:#fff;font-size:33px;margin:14px 0 13px}
+.audience-panel p{color:#d2e1ed;line-height:1.7;margin:0 0 19px}
+.audience-cta{display:inline-block;color:#f7fbff;font-size:14px;font-weight:750;border-bottom:1px solid #b2d6ef}
+.audience-subhead{display:block;color:#fff;margin:4px 0 15px}
+.audience-points{margin:0;padding:0;list-style:none}
+.audience-points li{position:relative;padding:11px 0 11px 29px;color:#d9e9f3;border-bottom:1px solid #43657b}
+.audience-points li::before{content:"✓";position:absolute;left:0;top:11px;color:#a8d5f3}
+.audience-documents{display:grid;grid-template-columns:1fr 1fr;gap:18px 50px;border-top:1px solid #597c94;margin-top:35px;padding-top:34px}
+.audience-documents h3{color:#fff;font-size:27px;margin:12px 0}
+.audience-documents p{color:#d0e1ef;margin:0;font-size:14px}
+.audience-documents ul{margin:0;padding-left:20px;color:#e1eef7;font-size:14px}
+.audience-documents li{margin-bottom:9px}
+.audience-docs-action{grid-column:1 / -1;display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:5px}
+.audience-docs-action .btn{flex:0 0 auto}
+.audience-docs-action span{font-size:12px;color:#bad0e0;max-width:540px}
+@media(max-width:800px){.audience-cols{grid-template-columns:1fr;gap:20px}.audience-documents{grid-template-columns:1fr;gap:20px}.audience-panel{padding:26px}}
+@media(max-width:600px){.audience-tab{flex:1 1 130px;min-width:0;padding:12px}.audience-panel h3{font-size:28px}.service-audience-link{margin-left:0;display:block;width:max-content;max-width:100%}.audience-docs-action .btn{width:100%}}
 </style></head><body>
 <header class="header"><div class="container header-in"><a class="logo" href="#home" aria-label="Всероссийский центр определения сметной стоимости строительства"><strong>Всероссийский центр</strong><small>определения сметной стоимости строительства</small></a><nav aria-label="Разделы"><a href="#about">О центре</a><a href="services.html">Услуги</a><a href="news.html">Статьи</a><a href="materials.html">Материалы</a><a href="#contacts">Контакты</a><a class="nav-cta" href="#scan">Смета-скан</a></nav></div></header>
 <main><section class="hero hero-approved" id="home" aria-label="Всероссийский центр определения сметной стоимости строительства">
@@ -189,7 +222,42 @@ nav a:hover,.text-link:hover{color:#c4e3fc}
 <article class="service"><span class="number">05</span><h3>Аналитика стройматериалов</h3><p>Сравнение рыночных цен и предложений поставщиков для принятия решений.</p><a href="services.html#materials">Подробнее об услуге ↗</a></article>
 <article class="service"><span class="number">06</span><h3>Юридическая аналитика</h3><p>Разбор договорных вопросов и документов, аналитические материалы по строительным спорам.</p><a href="services.html#legal">Подробнее об услуге ↗</a></article>
 <article class="service"><span class="number">07</span><h3>Бухгалтерские консультации</h3><p>Разбор учётных, расчётных и документальных вопросов строительных проектов.</p><a href="services.html#accounting">Подробнее об услуге ↗</a></article>
-</div><div style="margin-top:32px"><a class="btn" href="services.html">Все направления и условия работы ↗</a></div></div></section>
+</div><div style="margin-top:32px"><a class="btn" href="services.html">Все направления и условия работы ↗</a> <a class="text-link service-audience-link" href="#audience">Подобрать направление под задачу ↗</a></div></div></section>
+<section class="section audience-section" id="audience" aria-labelledby="audience-heading">
+<div class="container">
+ <div class="section-head">
+  <div><div class="kicker">Выберите свою задачу</div><h2 id="audience-heading">Для заказчика и подрядчика —<br><em>разный фокус проверки</em></h2></div>
+  <p>Одни и те же документы требуют разного подхода. Выберите свою роль, чтобы увидеть, на какие вопросы мы предлагаем обратить внимание в первую очередь.</p>
+ </div>
+ <div class="audience-tabs" role="tablist" aria-label="Подбор услуг по роли в строительстве">
+  <button id="aud-tab-customer" class="audience-tab" type="button" role="tab" aria-controls="aud-panel-customer" aria-selected="true" tabindex="0">Я заказчик</button>
+  <button id="aud-tab-contractor" class="audience-tab" type="button" role="tab" aria-controls="aud-panel-contractor" aria-selected="false" tabindex="-1">Я подрядчик</button>
+ </div>
+ <div class="audience-panel" id="aud-panel-customer" role="tabpanel" tabindex="0" aria-labelledby="aud-tab-customer">
+  <div class="audience-cols">
+   <div><div class="audience-eyebrow">Контроль бюджета и обоснованности</div><h3>Понять, за что вы платите</h3><p>Проверяем состав сметных работ, объёмы и цену ресурсов в пределах согласованного задания. Отдельно рассматриваем предложения подрядчиков и документы по уже выполненным работам.</p>
+   <a class="audience-cta" href="services.html#estimates">Проверка смет ↗</a></div>
+   <div><strong class="audience-subhead">С чем поможем разобраться</strong>
+    <ul class="audience-points"><li>Совпадают ли объёмы сметы с проектом и ведомостями?</li><li>Чем обоснованы расценки и стоимость материалов?</li><li>Что отражено в КС-2 и какие позиции требуют уточнения?</li></ul>
+   </div>
+  </div>
+ </div>
+ <div class="audience-panel" id="aud-panel-contractor" role="tabpanel" tabindex="0" aria-labelledby="aud-tab-contractor" hidden>
+  <div class="audience-cols">
+   <div><div class="audience-eyebrow">Обоснование работ и защита расчёта</div><h3>Подготовить аргументы для согласования</h3><p>Разбираем замечания к смете, спорные позиции и фактические объёмы. Помогаем систематизировать расчёты и документы для взаимодействия с заказчиком.</p>
+    <a class="audience-cta" href="services.html#acts">Сверка сметы и КС-2 ↗</a></div>
+   <div><strong class="audience-subhead">С чем поможем разобраться</strong>
+    <ul class="audience-points"><li>Почему заказчик не принимает расценки или объёмы?</li><li>Что уже закрыто актами КС-2, а что остаётся?</li><li>Каких исходных расчётов не хватает для обоснования стоимости?</li></ul>
+   </div>
+  </div>
+ </div>
+ <div class="audience-documents">
+  <div><span class="audience-tag">Перед обращением</span><h3>Какие документы подготовить?</h3><p>Для начала достаточно описания задачи. Если документы есть, полезно заранее собрать:</p></div>
+  <ul><li>смету и применяемую нормативную базу;</li><li>проект, спецификации или ведомость объёмов;</li><li>замечания и вопросы к расчётам;</li><li>акты КС-2 и КС-3 — если нужно проверить выполнение.</li></ul>
+  <div class="audience-docs-action"><a class="btn" href="#scan">Описать задачу в «Смета-скан» ↗</a><span>Не прикладывайте к открытой форме конфиденциальные документы: порядок их передачи согласуем отдельно.</span></div>
+ </div>
+</div>
+</section>
 <section class="section dark-section" id="approach"><div class="container dark-grid"><div><div class="kicker">02 / Понимаем задачу</div><h2>Знакомые сложности?<br><em>Разберём по существу.</em></h2><p>За каждой спорной расценкой, непринятым актом или нехваткой бюджета стоят конкретные расчёты и документы. Начинаем с их проверки, а не с общих обещаний.</p><a class="btn" href="#scan">Предварительная оценка ↗</a></div><ul class="problems"><li><b>01</b>Заказчик не принимает расценки или объёмы</li><li><b>02</b>Не хватает средств по смете</li><li><b>03</b>Нет сметчика в штате</li><li><b>04</b>Ошибки в расчётах и исходных данных</li><li><b>05</b>Не подписывают КС-2 и КС-3</li><li><b>06</b>Нужно обосновать стоимость работ</li></ul></div></section>
 <section class="section" id="process"><div class="container"><div class="kicker">03 / Порядок работы</div><h2>От вопроса к решению</h2><div class="steps"><article class="step"><b>01</b><h3>Заявка</h3><p>Вы описываете задачу и имеющиеся документы.</p></article><article class="step"><b>02</b><h3>Предварительная оценка</h3><p>Определяем предмет проверки и исходные сведения.</p></article><article class="step"><b>03</b><h3>Условия</h3><p>Согласуем состав платных работ, сроки и стоимость.</p></article><article class="step"><b>04</b><h3>Результат</h3><p>Передаём расчёты, таблицы или аналитическое заключение.</p></article></div><p class="formats"><strong>Формат сотрудничества:</strong> разовая оплата или постоянное сметное сопровождение.</p></div></section>
 <section class="section scan" id="scan"><div class="container scan-grid"><div class="scan-intro"><div class="kicker">04 / Первый шаг</div><h2>«Смета-скан»<br><em>Начнём с главного.</em></h2><p>Бесплатная краткая предварительная оценка сметной задачи. Поможем определить, какие расчёты и документы необходимо проверить в первую очередь.</p><p><strong>Что можно обсудить:</strong></p><ul><li>спорные расценки и объёмы;</li><li>сопоставление сметы и КС-2;</li><li>обоснование стоимости ресурсов;</li><li>недостающие исходные данные.</li></ul><p class="small">Бесплатный этап не заменяет полную экспертизу или итоговое сметное заключение.</p></div><div class="form-card"><div class="kicker">Заявка на оценку</div><h3>Опишите вашу задачу</h3>
@@ -276,6 +344,37 @@ copy.addEventListener("click",async function(){
   status.textContent="Текст выделен. Нажмите Ctrl+C для копирования, затем откройте Mail.ru и вставьте текст в письмо.";
  }
 });
+})();
+</script>
+<script>
+/* Accessible role selector; content is static and never sends visitor data. */
+(function(){
+"use strict";
+var tabs=Array.from(document.querySelectorAll("#audience [role=tab]"));
+if(tabs.length!==2)return;
+function activate(tab,focus){
+ tabs.forEach(function(item){
+  var chosen=item===tab;
+  item.setAttribute("aria-selected",String(chosen));
+  item.tabIndex=chosen?0:-1;
+  var id=item.getAttribute("aria-controls");
+  var panel=id?document.getElementById(id):null;
+  if(panel)panel.hidden=!chosen;
+ });
+ if(focus)tab.focus();
+}
+tabs.forEach(function(tab,index){
+ tab.addEventListener("click",function(){activate(tab,false);});
+ tab.addEventListener("keydown",function(event){
+  var next=null;
+  if(event.key==="ArrowRight")next=tabs[(index+1)%tabs.length];
+  if(event.key==="ArrowLeft")next=tabs[(index-1+tabs.length)%tabs.length];
+  if(event.key==="Home")next=tabs[0];
+  if(event.key==="End")next=tabs[tabs.length-1];
+  if(next){event.preventDefault();activate(next,true);}
+ });
+});
+activate(tabs[0],false);
 })();
 </script>
 <script src="./config/scan-form.js" defer></script>
