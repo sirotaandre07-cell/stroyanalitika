@@ -186,7 +186,8 @@ copy.addEventListener("click",async function(){
 "use strict";
 function attach(){
  const cfg=window.StroyAnalitikaScanConfig;
- const url=cfg&&typeof cfg.yandexFormUrl==="string"?cfg.yandexFormUrl.trim():"";
+ if(!cfg || cfg.yandexFormEnabled !== true)return; // show only after successful test and policy approval
+ const url=typeof cfg.yandexFormUrl==="string"?cfg.yandexFormUrl.trim():"";
  if(!/^https:\/\/forms\.yandex\.ru\/u\/[A-Za-z0-9_-]+\/?(?:\?.*)?$/.test(url))return;
  const frame=document.getElementById("yandex-scan-frame");
  const wrapper=document.getElementById("yandex-scan");
