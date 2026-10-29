@@ -86,6 +86,13 @@ nav a:hover,.text-link:hover{color:#c4e3fc}
 .scan-copy{width:100%;background:transparent;border:1px solid #a2c5df;color:#edf7fd;padding:13px 19px;font-weight:700;cursor:pointer}
 .scan-copy:hover{background:#285471}
 .scan-status{font-size:13px!important;color:#cfe8fa!important;margin:0;min-height:18px}
+.scan-result{background:#102e49;border:1px solid #597992;padding:20px;margin-top:12px;display:grid;gap:13px}
+.scan-result[hidden]{display:none}
+.scan-result label{color:#fff;font-size:13px;font-weight:750}
+.scan-result textarea{width:100%;font-size:13px;background:#f6f9fc;color:#112b40;border:1px solid #a6bfce;padding:12px;resize:vertical;line-height:1.5}
+.scan-mail-link{display:block;text-align:center;background:#edf6fc;color:#10314e;font-weight:750;padding:13px 20px;text-decoration:none}
+.scan-mail-link:hover{background:#cfdfeb}
+.scan-instructions{font-size:13px!important;color:#d5e7f4!important;margin:0!important;line-height:1.5!important}
 .form-card .disclaimer a{color:#f0f8ff;text-decoration:underline}
 </style></head><body>
 <header class="header"><div class="container header-in"><a class="logo" href="#home" aria-label="Всероссийский центр определения сметной стоимости строительства"><strong>Всероссийский центр</strong><small>определения сметной стоимости строительства</small></a><nav aria-label="Разделы"><a href="services.html">Услуги</a><a href="#approach">Подход</a><a href="#process">Этапы</a><a class="nav-cta" href="#scan">Проверить смету</a></nav></div></header>
@@ -111,42 +118,55 @@ nav a:hover,.text-link:hover{color:#c4e3fc}
 </div><div style="margin-top:32px"><a class="btn" href="services.html">Все направления и условия работы ↗</a></div></div></section>
 <section class="section dark-section" id="approach"><div class="container dark-grid"><div><div class="kicker">02 / Понимаем задачу</div><h2>Знакомые сложности?<br><em>Разберём по существу.</em></h2><p>За каждой спорной расценкой, непринятым актом или нехваткой бюджета стоят конкретные расчёты и документы. Начинаем с их проверки, а не с общих обещаний.</p><a class="btn" href="#scan">Предварительная оценка ↗</a></div><ul class="problems"><li><b>01</b>Заказчик не принимает расценки или объёмы</li><li><b>02</b>Не хватает средств по смете</li><li><b>03</b>Нет сметчика в штате</li><li><b>04</b>Ошибки в расчётах и исходных данных</li><li><b>05</b>Не подписывают КС-2 и КС-3</li><li><b>06</b>Нужно обосновать стоимость работ</li></ul></div></section>
 <section class="section" id="process"><div class="container"><div class="kicker">03 / Порядок работы</div><h2>От вопроса к решению</h2><div class="steps"><article class="step"><b>01</b><h3>Заявка</h3><p>Вы описываете задачу и имеющиеся документы.</p></article><article class="step"><b>02</b><h3>Предварительная оценка</h3><p>Определяем предмет проверки и исходные сведения.</p></article><article class="step"><b>03</b><h3>Условия</h3><p>Согласуем состав платных работ, сроки и стоимость.</p></article><article class="step"><b>04</b><h3>Результат</h3><p>Передаём расчёты, таблицы или аналитическое заключение.</p></article></div><p class="formats"><strong>Формат сотрудничества:</strong> разовая оплата или постоянное сметное сопровождение.</p></div></section>
-<section class="section scan" id="scan"><div class="container scan-grid"><div class="scan-intro"><div class="kicker">04 / Первый шаг</div><h2>«Смета-скан»<br><em>Начнём с главного.</em></h2><p>Бесплатная краткая предварительная оценка сметной задачи. Поможем определить, какие расчёты и документы необходимо проверить в первую очередь.</p><p><strong>Что можно обсудить:</strong></p><ul><li>спорные расценки и объёмы;</li><li>сопоставление сметы и КС-2;</li><li>обоснование стоимости ресурсов;</li><li>недостающие исходные данные.</li></ul><p class="small">Бесплатный этап не заменяет полную экспертизу или итоговое сметное заключение.</p></div><div class="form-card"><div class="kicker">Заявка на оценку</div><h3>Опишите вашу задачу</h3><p>Временный способ связи: заполните заявку, затем нажмите «Открыть письмо». Ваша почта подготовит сообщение на адрес центра — <strong>отправку нужно подтвердить самостоятельно</strong>.</p>
+<section class="section scan" id="scan"><div class="container scan-grid"><div class="scan-intro"><div class="kicker">04 / Первый шаг</div><h2>«Смета-скан»<br><em>Начнём с главного.</em></h2><p>Бесплатная краткая предварительная оценка сметной задачи. Поможем определить, какие расчёты и документы необходимо проверить в первую очередь.</p><p><strong>Что можно обсудить:</strong></p><ul><li>спорные расценки и объёмы;</li><li>сопоставление сметы и КС-2;</li><li>обоснование стоимости ресурсов;</li><li>недостающие исходные данные.</li></ul><p class="small">Бесплатный этап не заменяет полную экспертизу или итоговое сметное заключение.</p></div><div class="form-card"><div class="kicker">Заявка на оценку</div><h3>Опишите вашу задачу</h3><p>Заполните форму и нажмите «Подготовить заявку». Готовый текст появится прямо на странице — без почтовой программы. Затем скопируйте его и отправьте на <strong>ngs-p@mail.ru</strong> из своей почты.</p>
 <form id="scan-form"><div class="two"><label>Имя *<input name="name" required autocomplete="name" maxlength="100" placeholder="Ваше имя"></label><label>Телефон *<input name="phone" type="tel" required autocomplete="tel" maxlength="40" placeholder="+7 ..."></label></div><label>Электронная почта *<input name="email" type="email" required autocomplete="email" maxlength="150" placeholder="example@mail.ru"></label><label>Направление<select name="service"><option>Проверка сметы</option><option>Составление сметы</option><option>Конъюнктурный анализ</option><option>Анализ КС-2 / КС-3</option><option>Экспертное сопровождение</option><option>Юридическая аналитика</option><option>Бухгалтерская консультация</option><option>Другое</option></select></label><label>Коротко о задаче<textarea name="description" rows="4" maxlength="2000" placeholder="Что необходимо проверить или рассчитать?"></textarea></label><label class="scan-consent"><input type="checkbox" name="data_consent" value="Да" required> <span>Согласен(на) на использование моих контактных данных для ответа на обращение по электронной почте.</span></label>
-<button class="btn submit" type="submit">Открыть письмо для отправки ↗</button>
+<button class="btn submit" type="submit">Подготовить текст заявки ↓</button>
+<div id="scan-result" class="scan-result" hidden>
+<label for="scan-ready">Текст вашей заявки</label>
+<textarea id="scan-ready" rows="11" readonly aria-label="Готовый текст заявки"></textarea>
 <button class="scan-copy" id="scan-copy" type="button">Скопировать текст заявки</button>
+<a class="scan-mail-link" href="https://e.mail.ru/" target="_blank" rel="noopener noreferrer">Открыть Mail.ru в браузере ↗</a>
+<p class="scan-instructions">В почте нажмите «Написать письмо», укажите получателя <strong>ngs-p@mail.ru</strong>, вставьте скопированный текст и нажмите «Отправить».</p>
+</div>
 <p id="scan-status" role="status" aria-live="polite" class="scan-status"></p>
-<div class="disclaimer">Сайт не отправляет эту заявку автоматически. При нажатии основной кнопки откроется ваша почтовая программа или приложение — проверьте письмо и нажмите «Отправить». Если почта не открылась, скопируйте текст заявки и отправьте его самостоятельно на <a href="mailto:ngs-p@mail.ru">ngs-p@mail.ru</a>. Данные остаются в браузере до открытия почтовой программы; сайт их не сохраняет. Не прикладывайте конфиденциальные документы. Политику обработки персональных данных подготовим до полноценного коммерческого запуска.</div></form></div></div></section>
+<div class="disclaimer">Этот временный способ не отправляет данные автоматически: заявка формируется только в вашем браузере. Не указывайте конфиденциальные сведения. Перед полноценным приёмом заявок потребуется отдельный обработчик и политика персональных данных.</div></form></div></div></section>
 <section class="section light"><div class="container faq-grid"><div><div class="kicker">05 / Вопросы и ответы</div><h2>Что важно знать</h2></div><div><details><summary>Работаете ли вы с объектами по всей России?</summary><p>Да, задачи рассматриваются дистанционно независимо от региона проекта.</p></details><details><summary>Можно ли заказать только проверку отдельного раздела?</summary><p>Да, состав и объём работ согласуются отдельно для каждой задачи.</p></details><details><summary>Как определяется стоимость услуг?</summary><p>После знакомства с задачей, документами и ожидаемым результатом.</p></details><details><summary>Как передать исходную смету?</summary><p>Способ безопасной передачи документов будет согласован после подключения канала приёма заявок.</p></details></div></div></section></main>
 <footer class="footer"><div class="container footer-in"><div><strong>Всероссийский центр определения сметной стоимости строительства</strong><p>Сметные расчёты · строительная аналитика · экспертное сопровождение</p></div><div>По всей России · <a href="#scan">Смета-скан</a></div></div></footer>
 
 <script>
 (function(){
-const form=document.getElementById("scan-form"),copy=document.getElementById("scan-copy"),status=document.getElementById("scan-status");
+"use strict";
+const form=document.getElementById("scan-form");
+const output=document.getElementById("scan-result");
+const ready=document.getElementById("scan-ready");
+const copy=document.getElementById("scan-copy");
+const status=document.getElementById("scan-status");
 function prepare(){
  const data=new FormData(form);
  const line=(label,name)=>label+": "+String(data.get(name)||"").trim();
- return ["Заявка «Смета-скан»","Всероссийский центр определения сметной стоимости строительства","",line("Имя","name"),line("Телефон","phone"),line("Электронная почта","email"),line("Направление","service"),line("Описание задачи","description"),"","Я подтверждаю согласие на использование указанных контактных данных для ответа по электронной почте."].join("\n");
+ return ["Заявка «Смета-скан»","Всероссийский центр определения сметной стоимости строительства","",line("Имя","name"),line("Телефон","phone"),line("Электронная почта","email"),line("Направление","service"),line("Описание задачи","description"),"","Согласие на использование контактных данных для ответа по электронной почте: да."].join("\n");
 }
 form.addEventListener("submit",function(event){
  event.preventDefault();
  if(!form.reportValidity())return;
- const content=prepare();
- const address="mailto:ngs-p@mail.ru?subject="+encodeURIComponent("Заявка «Смета-скан» — Всероссийский центр")+"&body="+encodeURIComponent(content);
- status.textContent="Откройте окно почты и нажмите «Отправить». Если окно не открылось, воспользуйтесь кнопкой копирования ниже.";
- window.location.href=address;
+ ready.value=prepare();
+ output.hidden=false;
+ status.textContent="Заявка готова. Скопируйте её текст, затем откройте Mail.ru и отправьте письмо.";
+ ready.focus();
+ ready.select();
+ output.scrollIntoView({behavior:"smooth",block:"nearest"});
 });
 copy.addEventListener("click",async function(){
- if(!form.reportValidity())return;
- const content=prepare();
+ if(output.hidden)return;
+ ready.focus();
+ ready.select();
  try{
-  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(content);}
-  else{
-   const el=document.createElement("textarea");el.value=content;el.style.position="fixed";el.style.left="-9999px";document.body.appendChild(el);el.select();
-   const ok=document.execCommand("copy");el.remove();if(!ok)throw Error("copy failed");
-  }
-  status.textContent="Текст заявки скопирован. Откройте свою почту, вставьте текст и отправьте на ngs-p@mail.ru.";
- }catch(_){status.textContent="Не удалось скопировать автоматически. Вы можете отправить письмо напрямую на ngs-p@mail.ru.";}
+  if(navigator.clipboard&&window.isSecureContext) await navigator.clipboard.writeText(ready.value);
+  else {if(!document.execCommand("copy"))throw new Error("copy unavailable");}
+  status.textContent="Текст скопирован. Нажмите «Открыть Mail.ru в браузере», создайте письмо на ngs-p@mail.ru и вставьте текст.";
+ }catch(_){
+  status.textContent="Текст выделен. Нажмите Ctrl+C для копирования, затем откройте Mail.ru и вставьте текст в письмо.";
+ }
 });
 })();
 </script>
